@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/weather-app/static/css/main.be481b37.css",
-    "main.js": "/weather-app/static/js/main.27f25ceb.js",
-    "static/js/453.45714770.chunk.js": "/weather-app/static/js/453.45714770.chunk.js",
-    "index.html": "/weather-app/index.html",
-    "main.be481b37.css.map": "/weather-app/static/css/main.be481b37.css.map",
-    "main.27f25ceb.js.map": "/weather-app/static/js/main.27f25ceb.js.map",
-    "453.45714770.chunk.js.map": "/weather-app/static/js/453.45714770.chunk.js.map"
+    "main.css": "/ventra-weather/static/css/main.be481b37.css",
+    "main.js": "/ventra-weather/static/js/main.ae3b2806.js",
+    "static/js/453.45714770.chunk.js": "/ventra-weather/static/js/453.45714770.chunk.js",
+    "index.html": "/ventra-weather/index.html",
+    "main.be481b37.css.map": "/ventra-weather/static/css/main.be481b37.css.map",
+    "main.ae3b2806.js.map": "/ventra-weather/static/js/main.ae3b2806.js.map",
+    "453.45714770.chunk.js.map": "/ventra-weather/static/js/453.45714770.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be481b37.css",
-    "static/js/main.27f25ceb.js"
+    "static/js/main.ae3b2806.js"
   ]
 }
