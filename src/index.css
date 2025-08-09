@@ -1,3 +1,5 @@
+/* Global Styles for Ventra Weather App */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,103 +7,58 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  background: #f8fafc;
+  color: #1e293b;
 }
 
-.app {
-  background-image: url("./assets/protruding-squares.svg");
-  background-size:auto;
-  /* background-position: bottom; */
-  transition: 0.4 ease;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.app.warm {
-  background-image: url("./assets/subtle-prism.svg");
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-main {
-  min-height: 100vh;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.75)
-  );
-  padding: 25px;
+::-webkit-scrollbar-track {
+  background: rgba(226, 232, 240, 0.3);
 }
 
-.search-box {
-  width: 100%;
-  margin: 0 0 75px;
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 3px;
 }
 
-.search-box .search-bar {
-  display: block;
-  width: 100%;
-  padding: 15px 15px;
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
-
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 5px 5px 16px 16px;
-  /* margin-top: -25px; */
-
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-
-  color: #050505;
-  font-size: 30px;
-
-  transition: 0.4s ease;
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.5);
 }
 
-.search-box .search-bar:focus {
-  background-color: rgba(255, 255, 255, 0.75);
-  color:black ;
+/* Selection styles */
+::selection {
+  background: rgba(59, 130, 246, 0.2);
+  color: #1e293b;
 }
 
-.location-box .location {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+/* Focus styles */
+*:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
 }
 
-.location-box .date {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.2s ease;
 }
 
-.weather-box {
-  text-align: center;
+/* Remove transitions for specific elements that shouldn't have them */
+.no-transition,
+.no-transition * {
+  transition: none !important;
 }
 
-.weather-box .temp {
-  position: relative;
-  display: inline-block;
-  margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-
-  padding: 15px 25px;
-
-  color: #fff;
-  font-size: 102px;
-  font-weight: 900;
-
-  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
-  text-align: center;
-  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.weather-box .weather {
-  color: #fff;
-  font-size: 48px;
-  font-weight: 700;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
-}
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
